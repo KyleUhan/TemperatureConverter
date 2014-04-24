@@ -103,8 +103,9 @@ public class MainWindow extends javax.swing.JFrame {
                     .addComponent(txtTempInput, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnConvertTemp)
-                .addGap(18, 18, 18)
-                .addComponent(lblOutputDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(5, 5, 5)
+                .addComponent(lblOutputDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -123,7 +124,7 @@ public class MainWindow extends javax.swing.JFrame {
             convertedTempValue = (((tempValue) - 32) * 5)/9;
             outputValueType = "C - ";
         }else{
-            outputValueType = "Select input type - C or F";
+            outputValueType = "Select C or F";
         }
          
         lblOutputDisplay.setText(outputValueType + " " + convertedTempValue);
